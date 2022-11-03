@@ -1,4 +1,5 @@
 require "pry"
+
 def admin_login(username, password)
   # your code here
   if username === "admin" && password === "12345"
@@ -6,8 +7,9 @@ def admin_login(username, password)
   else
     puts "Access denied"
   end
-
 end
+
+# binding.pry
 
 def hows_the_weather(temperature)
   # your code here
@@ -25,6 +27,8 @@ def hows_the_weather(temperature)
   puts response
 end
 
+# binding.pry
+
 def fizzbuzz(num)
   # your code here
   if num % 3 === 0 && num % 5 === 0
@@ -38,8 +42,11 @@ def fizzbuzz(num)
   end
 end
 
+# binding.pry
+
 def calculator(operation, num1, num2)
   # your code here
+  # calculator using switch case
   case operation
   when "+"
     puts num1 + num2
